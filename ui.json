@@ -1,0 +1,12 @@
+{
+  "defaultEntryPoint": "index.html",
+  "namespace": "Debit",
+  "menuEntries": [
+    {
+      "label": "Lastschrift",
+      "menu": "settings/orders/payment/Plugins",
+      "urlKey": "debit",
+      "entryPoint": "index.html"
+    }
+  ]
+}

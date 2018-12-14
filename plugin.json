@@ -1,0 +1,34 @@
+{
+    "version"           : "1.0.0",
+    "name"              : "Debit",
+    "marketplaceName"   : {"de":"Lastschrift","en":"Direct debit"},
+    "license"           : "",
+    "pluginIcon"        : "icon_plugin_xs.png",
+    "price"             : 0.00,
+    "description"       : "Direct debit plugin for plentymarkets online stores",
+    "shortDescription"  : {"de": "Zahlungsart Lastschrift für plentymarkets Webshops","en": "Payment method Direct debit for plentymarkets online stores"},
+    "categories"        : ["3519"],
+    "author"            : "Skyport GmbH - A. Schieder",
+    "authorIcon"        : "icon_author_xs.png",
+    "email"             : "a.schieder@skyport-group.de",
+    "phone"             : "",
+    "keywords"          : ["debit", "directdebit", "direct", "Lastschrift", "official", "skyport", "payment"],
+    "type"              : "payment",
+    "namespace"         : "Debit",
+    "serviceProvider"   : "Debit\\Providers\\DebitServiceProvider",
+    "javaScriptFiles"   : [],
+    "containers"        : [],
+    "dataProviders"     :
+    [
+        {
+            "key"           :"Debit\\Providers\\Icon\\IconProvider",
+            "name"          :"Debit icon",
+            "description"   :"Display the icon for this payment method"
+        }
+    ],
+    "dependencies"      : [],
+    "runOnBuild"        : [
+        "Debit\\Migrations\\CreateSettings_1_0_0",
+        "Debit\\Migrations\\CreateSettings_1_1_0"
+    ]
+}
